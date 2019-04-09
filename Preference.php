@@ -21,14 +21,19 @@ class Preference{
             break;
 
             case self::TYPE_BOOL:
-                return (boolean) $value;
+                return filter_var($value,FILTER_VALIDATE_BOOLEAN);
             break;
 
             case self::TYPE_INT:
-                return (int) $value;
+                return filter_var($value,FILTER_VALIDATE_BOOLEAN);
             break;                        
         }
     }
 
+    public function value(){
+        return $this-> getValue($this -> value);
+    }
+
+    
 }
 
