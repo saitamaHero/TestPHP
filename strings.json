@@ -1,0 +1,13 @@
+{
+    "lang":"es-DO",
+    "strings":{
+
+        "plurals":{
+            "itemlocal":{
+                "single": "minutos",
+                "multiple": "minutos"
+            }
+            
+        }
+    }
+}
