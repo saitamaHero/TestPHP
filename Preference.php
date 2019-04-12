@@ -20,11 +20,11 @@ class Preference{
                 return (string) $value;
             break;
 
-            case self::TYPE_BOOL:
-                return filter_var($value,FILTER_VALIDATE_BOOLEAN);
+            case self::TYPE_INT:
+                return filter_var($value,FILTER_VALIDATE_INT);
             break;
 
-            case self::TYPE_INT:
+            case self::TYPE_BOOL:
                 return filter_var($value,FILTER_VALIDATE_BOOLEAN);
             break;                        
         }
